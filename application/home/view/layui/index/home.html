@@ -1,0 +1,136 @@
+{extend name="public/container"}
+
+{block name="title"}
+{$siteData['site_name']}
+{/block}
+
+{block name="content"}
+
+<div class="layui-fulid">
+  <div class="layui-carousel house-carousel" id="house-carousel">
+    <div carousel-item>
+      {volist name="banner" id="value"}
+      <div><img src="{$value.pic}"></div>
+      {/volist}
+    </div>
+  </div>
+</div>
+
+<div class="layui-container">
+  <!--<div class="hot-cate">
+    <p class="house-title"></p>
+    <div class="layui-row">
+      <div class="layui-col-xs4 cateFir cate">
+        <a href="list.html">
+          <img src="{__HOME_PATH}/layui/static/img/home_img1.png">
+          <div>
+            <p>一起来众筹</p>
+            <span>价格"脱"到底</span>
+          </div>
+        </a>
+      </div>
+      <div class="layui-col-xs4 cateSec cate">
+        <a href="list.html">
+          <img src="{__HOME_PATH}/layui/static/img/home_img2.png">
+          <div>
+            <p>秒杀专区</p>
+            <span>限时秒杀</span>
+          </div>
+        </a>  
+      </div>
+      <div class="layui-col-xs4 cateThir cate">
+        <a href="list.html">
+          <img src="{__HOME_PATH}/layui/static/img/home_img3.png">
+          <div>
+            <p>开课啦！！！</p>
+            <span>最新热门课程</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="hot-sell">
+    <p class="house-title">宝通严选<a href="">更多严选  &gt;</a></p>
+    <div class="layui-row layui-col-space20">
+      {volist name="info.brandList" id="value"}
+      <a href="" class="layui-col-xs3 text">
+        <div><img src="{$value.logo}" style="max-height: 180px;"></div>
+        <p>{$value.name}</p>
+      </a>
+      {/volist}
+    </div>
+  </div>
+
+  <div class="hot-sell">
+    <p class="house-title">首发新品<a href="/home/store/index.html">更多新品  &gt;</a></p>
+    <div class="layui-row layui-col-space20">
+
+      {volist name="info.firstList" id="value"}
+      <a href="" class="layui-col-xs3 text">
+        <div><img src="{$value.image}" style="max-height: 120px;"></div>
+        <p>{$value.cate_name} & {$value.name}</p>
+        <p class="price" style="text-align: center;">{$value.add_time}发布</p>
+      </a>
+      {/volist}
+
+    </div>
+  </div>
+</div>
+
+<div class="layui-container">
+  <div class="hot-sell">
+    <p class="house-title">干货分享<a href="/home/knowledge/index.html">更多干货  &gt;</a></p>
+    <div class="layui-row layui-col-space20">
+
+      {volist name="info.knowledgeList" id="value"}
+      <a href="" class="layui-col-xs3 text">
+        <div><img src="{$value.posters[0]}" style="max-height: 180px;"></div>
+        <p>{$value.title}</p>
+        <p class="price">
+          <img src="{$value.user.avatar}" />
+          {$value.add_time}发布
+        </p>
+      </a>
+      {/volist}
+
+    </div>
+  </div>
+</div>
+
+<div class="layui-fulid" id="champ">
+  <!--<div class="layui-row">
+    <a href="list.html" class="layui-col-xs3">
+      <img src="{__HOME_PATH}/layui/static/img/home_img16.jpg">
+    </a>
+    <a href="list.html" class="layui-col-xs6">
+      <img src="{__HOME_PATH}/layui/static/img/home_img17.jpg">
+    </a>
+    <a href="list.html" class="layui-col-xs3">
+      <img src="{__HOME_PATH}/layui/static/img/home_img20.jpg">
+    </a>
+    <a href="list.html" class="layui-col-xs3">
+      <img src="{__HOME_PATH}/layui/static/img/home_img18.jpg">
+    </a>
+    <a href="list.html" class="layui-col-xs3">
+      <img src="{__HOME_PATH}/layui/static/img/home_img19.jpg">
+    </a>
+    <a href="list.html" class="layui-col-xs3">
+      <img src="{__HOME_PATH}/layui/static/img/home_img21.jpg">
+    </a>
+  </div> -->
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '{__HOME_PATH}/layui/static/js/'
+  }).use('house');
+</script>
+
+{/block}

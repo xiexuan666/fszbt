@@ -1,0 +1,24 @@
+<!-- nav部分 -->
+<link rel="stylesheet" href="{__HOME_PATH}/layui/news/static/css/index.css">
+<div class="nav">
+    <div class="layui-container">
+        <!-- 公司logo -->
+        <div class="nav-logo">
+            <a href="/home/index/index">
+                <img src="{$siteData['routine_logo']}" alt="{$siteData['site_name']}" style="max-height: 40px;">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="/home/index/index">首页</a></li>
+                <li class="layui-nav-item"><a href="/home/news/lists">动态</a></li>
+                <li class="layui-nav-item layui-this"><a href="/home/my/index">用户中心</a></li>
+                <li class="layui-nav-item"><a href="/home/login/logout">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

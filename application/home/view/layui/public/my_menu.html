@@ -1,0 +1,80 @@
+<div class="layui-col-sm2">
+    <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="user" style="width: 180px;">
+
+        {volist name="my_menus" id="item" key="index"}
+        <?php if($item['isLevel'] == true){ ?>
+            <li class="layui-nav-item <?php if($get_key == $index){ echo 'layui-this'; } ?>">
+                <a href="{$item.url_pc}?get_key={$index}">
+                    <i class="layui-icon {$item.img_pc}"></i> {$item.name}
+                </a>
+            </li>
+        <?php } ?>
+        {/volist}
+
+
+        <!--<li class="layui-nav-item <?php if($controller == 'My' && $action == 'index'){ echo 'layui-this'; } ?>">
+            <a href="/home/my/index">
+                <i class="layui-icon layui-icon-username"></i> 个人中心</a></li>
+        <li class="layui-nav-item <?php if($controller == 'Resume' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/resume/admin">
+                <i class="layui-icon layui-icon-note"></i> 简历管理</a></li>
+        <li class="layui-nav-item <?php if($controller == 'Job' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/job/admin">
+                <i class="layui-icon layui-icon-user"></i> 招聘管理</a></li>
+        <li class="layui-nav-item <?php if($controller == 'Company' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/company/admin">
+                <i class="layui-icon layui-icon-template-1"></i> 企业管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'Brand' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/brand/admin">
+                <i class="layui-icon layui-icon-template"></i> 品牌商管理</a></li>
+        <li class="layui-nav-item <?php if($controller == 'Dealers' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/dealers/admin">
+                <i class="layui-icon layui-icon-component"></i> 经销商管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'Supplier' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/supplier/admin">
+                <i class="layui-icon layui-icon-link"></i> 供应商管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'Supply' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/supply/admin">
+                <i class="layui-icon layui-icon-tabs"></i> 招商管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'GoodsNew' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/goods_new/admin">
+                <i class="layui-icon layui-icon-form"></i> 新品管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'Goods' && $action == 'admin'){ echo 'layui-this'; } ?>">
+            <a href="/home/goods/admin">
+                <i class="layui-icon layui-icon-release"></i> 产品管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'My' && $action == 'article'){ echo 'layui-this'; } ?>">
+            <a href="/home/my/article">
+                <i class="layui-icon layui-icon-reply-fill"></i> 资讯管理</a>
+        </li>
+        <li class="layui-nav-item <?php if($controller == 'My' && $action == 'knowledge'){ echo 'layui-this'; } ?>">
+            <a href="/home/my/knowledge">
+                <i class="layui-icon layui-icon-chart-screen"></i> 干货管理</a>
+        </li>-->
+        <span class="layui-nav-bar" style="top: 257.5px; height: 0px; opacity: 0;"></span>
+    </ul>
+
+
+    <!--<ul class="user-list">
+        <li class="<?php if($controller == 'My' && $action == 'index'){ echo 'active'; } ?>"><a href="/home/my/index.html">个人中心</a></li>
+        <li class="<?php if($controller == 'Resume' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/resume/admin.html">简历管理</a></li>
+        <li class="<?php if($controller == 'Job' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/job/admin.html">招聘管理</a></li>
+        <li class="<?php if($controller == 'Company' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/company/admin.html">企业管理</a></li>
+        <li class="<?php if($controller == 'Brand' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/brand/admin.html">品牌商管理</a></li>
+        <li class="<?php if($controller == 'Dealers' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/dealers/admin.html">经销商管理</a></li
+        <li class="<?php if($controller == 'Supplier' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/supplier/admin.html">供应商管理</a></li>
+        <li class="<?php if($controller == 'Supply' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/supply/admin.html">招商管理</a></li>
+        <li class="<?php if($controller == 'GoodsNew' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/goods_new/admin.html">新品管理</a></li>
+        <li class="<?php if($controller == 'Goods' && $action == 'admin'){ echo 'active'; } ?>"><a href="/home/goods/admin.html">产品管理</a></li>
+        <li class="<?php if($controller == 'My' && $action == 'article'){ echo 'active'; } ?>"><a href="/home/my/article.html">资讯管理</a></li>
+        <li class="<?php if($controller == 'My' && $action == 'knowledge'){ echo 'active'; } ?>"><a href="/home/my/knowledge.html">干货管理</a></li>
+        <li class="<?php if($controller == 'My' && $action == 'subion'){ echo 'active'; } ?>"><a href="/home/my/subion.html">我的订阅</a></li>
+        <li class="<?php if($controller == 'My' && $action == 'collect'){ echo 'active'; } ?>"><a href="/home/my/collect.html">我的收藏</a></li>
+        <li class="<?php if($controller == 'My' && $action == 'address'){ echo 'active'; } ?>"><a href="/home/my/address.html">地址管理</a></li>
+    </ul>-->
+</div>

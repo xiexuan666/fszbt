@@ -1,0 +1,187 @@
+{extend name="public/container"}
+{block name="title"}系列管理{/block}
+{block name="content"}
+
+<div class="layui-container userpublic house-userPer">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">个人中心 <i class="layui-icon layui-icon-right"></i> 新品 <i class="layui-icon layui-icon-right"></i> <span>系列管理</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <a href="/home/goods/admin" class="layui-btn layui-btn-warm">返回新品 <i class="layui-icon layui-icon-return"></i></a>
+      <a class="layui-btn" id="series-add">添加系列 <i class="layui-icon layui-icon-add-circle-fine"></i></a>
+    </div>
+    <div class="layui-col-sm10">
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">新品系列列表</li>
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+            <table id="house-user-order" lay-filter="house-user-order"></table>
+          </div>
+          <div class="layui-tab-item"></div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="statusTpl">
+  {{#  if(d.is_show == 1){ }}
+    <span style="color: #999;">显示</span>
+  {{#  } else { }}
+    <span style="color: #e09b4e;">待审核</span>
+  {{#  } }}
+</script>
+
+<script type="text/html" id="handleTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+  </div>
+</script>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  /**
+   @Name: 系列管理
+   @Author: wshbin
+   @Copyright: wshbin
+   */
+  layui.define(['element', 'carousel', 'table', 'util'], function(exports){
+    var $ = layui.$
+      ,table = layui.table;
+
+    //TODO 请求产品系列列表
+    table.render({
+      elem: '#house-user-order'
+      ,url:  '/home/goods/get_series_list'
+      ,skin: 'line'
+      ,cols: [[
+        {title:'ID', field:'id', align:'center', width:80}
+        ,{title:'标题', field:'cate_name'}
+        ,{title:'状态', align:'center', templet: '#statusTpl', width:100}
+        ,{title:'操作', align:'center', templet: '#handleTpl', width:150}
+      ]]
+    });
+
+    //TODO 监听事件 添加
+    $(".userpublic").find("#series-add").on('click', function(){
+      layer.open({
+        type: 2
+        ,title: '添加系列'
+        ,content: '/home/goods/series_create.html'
+        ,area: ['730px', '420px']
+        ,shade: 0.8
+        ,skin: 'address-class'
+        ,btn: '确定'
+        ,yes: function(index, layero){
+          window['layui-layer-iframe'+ index].layui.form.on('submit(series-submit)', function(data){
+
+            $.ajax({
+              url:'/home/goods/series_create_save',
+              method:'post',
+              data:data.field,
+              dataType:'JSON',
+              success:function(res){
+                if(res.code = 200){
+                  layer.msg(res.msg,{
+                    time: 1000,
+                    end: function () {
+                      parent.location.reload(); //刷新父页面
+                      layer.close(index);
+                    }
+                  })
+                } else {
+                  alert(res.msg);
+                  return false;
+                }
+              },error:function (data) {
+                layer.msg(data);
+                return false;
+              }
+            });
+            return false;
+          });
+          layero.find('iframe').contents().find("#series-submit").trigger('click');
+        }
+      });
+    });
+
+    //TODO 监听事件 编辑 删除
+    table.on('tool(house-user-order)', function(obj){
+      var data = obj.data;
+      console.log(data)
+      if(obj.event === 'edit'){
+        layer.open({
+          type: 2
+          ,title: '编辑系列'
+          ,content: "/home/goods/series_create?id="+data.id
+          ,area: ['730px', '420px']
+          ,shade: 0.8
+          ,skin: 'address-class'
+          ,btn: '确定'
+          ,yes: function(index, layero){
+            window['layui-layer-iframe'+ index].layui.form.on('submit(series-submit)', function(data){
+
+              $.ajax({
+                url:'/home/goods/series_create_save',
+                method:'post',
+                data:data.field,
+                dataType:'JSON',
+                success:function(res){
+                  if(res.code = 200){
+                    layer.msg(res.msg,{
+                      time: 1000,
+                      end: function () {
+                        parent.location.reload(); //刷新父页面
+                        layer.close(index);
+                      }
+                    })
+                  } else {
+                    alert(res.msg);
+                    return false;
+                  }
+                },error:function (data) {
+                  layer.msg(data);
+                  return false;
+                }
+              });
+              return false;
+            });
+            layero.find('iframe').contents().find("#series-submit").trigger('click');
+          }
+        });
+      } else if(obj.event === 'del') {
+        layer.confirm('确定删除？', function(index){
+          var url = '/home/goods/series_del';
+          $.getJSON(url, data, function(res){
+            if(res.code == 200){
+              layer.msg(res.msg,{
+                time: 1000,
+                end: function () {
+                  obj.del();
+                  layer.close(index);
+                }
+              })
+            } else {
+              alert(res.msg);
+              return false;
+            }
+          });
+
+        });
+      }
+    });
+
+    exports('house', {});
+  })
+</script>
+
+{/block}

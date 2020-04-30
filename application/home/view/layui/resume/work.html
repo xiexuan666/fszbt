@@ -1,0 +1,223 @@
+{extend name="public/container"}
+{block name="title"}添加工作经历{/block}
+{block name="content"}
+
+<div class="layui-container userpublic house-userPer">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">个人中心 <i class="layui-icon layui-icon-right"></i> <span>添加工作经历</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <a href="/home/resume/admin" class="layui-btn layui-btn-warm">返回我的简历 <i class="layui-icon layui-icon-return"></i></a>
+    </div>
+    <div class="layui-col-sm10">
+
+      <form class="layui-form" action="">
+        <input type="hidden" name="id" value="{$data.id}">
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">就职公司</label>
+          <div class="layui-input-inline">
+            <input type="text" name="name" value="{$data.name}" required  lay-verify="required" placeholder="请输入就职公司" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">开始时间</label>
+          <div class="layui-input-inline">
+            <input type="text" name="start_time" id="start_time" value="{$data.start_time}" required  lay-verify="required" placeholder="选择开始时间" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">结束时间</label>
+          <div class="layui-input-inline">
+            <input type="text" name="stop_time" id="stop_time" value="{$data.stop_time}" required  lay-verify="required" placeholder="选择结束时间" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">就职部门</label>
+          <div class="layui-input-inline">
+            <select name="industry" lay-verify="required">
+              {volist name="industry_arr" id="val"}
+              <option value="{$val.id}" {if condition="$val['id'] == $data['industry']"}selected{/if}>{$val.name}</option>
+              {/volist}
+            </select>
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">就职岗位</label>
+          <div class="layui-input-inline">
+            <select class="select" name="drpprovince" id="drpprovince" lay-filter="drpprovince"></select>
+          </div>
+          <div class="layui-input-inline">
+            <select id="drpcity" name="drpcity" class="select" lay-filter="drpcity"></select>
+          </div>
+          <div class="layui-input-inline">
+            <select id="drparea" name="drparea" class="select" lay-filter="drparea"></select>
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">工作内容</label>
+          <div class="layui-input-block">
+            <textarea id="demo" name="description" style="display: none;" lay-verify="description">{$data.description}</textarea>
+            <div class="layui-form-mid layui-word-aux">请认真填写工作内容</div>
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+
+  layui.use(['form','layedit','laydate'], function(){
+    var $ = layui.$;
+    var form = layui.form;
+    var layedit = layui.layedit;
+    var laydate = layui.laydate;
+
+    //日期时间选择器
+    laydate.render({
+      elem: '#start_time'
+      ,type: 'month'
+    });
+
+    //日期时间选择器
+    laydate.render({
+      elem: '#stop_time'
+      ,type: 'month'
+    });
+
+
+    //TODO 分类三级联动
+    var proid = 0;
+    //TODO 分类一级联动
+    $.getJSON("/home/auth_api/get_position_one", function (data) {
+      $.each(data.data, function (i, item) {
+        if (i == 0) {
+          proid = item.id
+        }
+        $('#drpprovince').append('<option  value=' + item.id + '>' + item.name + "</option>");
+      })
+      $.getJSON('/home/auth_api/get_position_two?id=' + proid, function (data) {
+        $.each(data.data, function (i, item) {
+          if (i == 0) {
+            $.getJSON('/home/auth_api/get_position_two?id=' + item.id, function (data) {
+              $.each(data.data, function (i, item) {
+                $('#drparea').append('<option  value=' + item.id + '>' + item.name + "</option>");
+              })
+              form.render('select');
+            });
+          }
+          $('#drpcity').append('<option  value=' + item.id + '>' + item.name + "</option>");
+        })
+        form.render('select');
+      });
+    });
+
+    //TODO 分类二级联动
+    form.on('select(drpprovince)', function (data) {
+      var proid = data.value;
+      $('#drpcity').html("");
+      $('#drparea').html("");
+      $.getJSON('/home/auth_api/get_position_two?id=' + proid, function (data) {
+        $.each(data.data, function (i, item) {
+          if (i == 0) {
+            $.getJSON('/home/auth_api/get_position_two?id=' + item.id, function (data) {
+              $.each(data.data, function (i, item) {
+                $('#drparea').append('<option  value=' + item.id + '>' + item.name + "</option>");
+              })
+              form.render('select');
+            });
+          }
+          $('#drpcity').append('<option  value=' + item.id + '>' + item.name + "</option>");
+        })
+        form.render('select');
+      });
+    });
+
+    //TODO 分类三级联动
+    form.on('select(drpcity)', function (data) {
+      var cityid = data.value;
+      $('#drparea').html("");
+      $.getJSON('/home/auth_api/get_position_two?id=' + cityid, function (data) {
+        $.each(data.data, function (i, item) {
+          $('#drparea').append('<option  value=' + item.id + '>' + item.name + "</option>");
+        })
+        form.render('select');
+      });
+    });
+
+    //TODO 富文本编辑图片上传
+    layedit.set({
+      uploadImage: {
+        url: '/home/auth_api/upload' //接口url
+        ,type: '' //默认post
+      }
+    });
+
+    //TODO 建立编辑器-岗位职责
+    var responsibility = layedit.build('responsibility');
+
+    form.verify({
+      responsibility: function() {
+        return layedit.sync(responsibility);
+      }
+    });
+
+    //TODO 建立编辑器-任务要求
+    var index = layedit.build('demo');
+
+    form.verify({
+      description: function() {
+        return layedit.sync(index);
+      }
+    });
+
+    //TODO 监听提交
+    form.on('submit(formDemo)', function(data){
+      $.ajax({
+        url:'/home/resume/work_save',
+        method:'post',
+        data:data.field,
+        dataType:'JSON',
+        success:function(res){
+          if(res.code == 200){
+            layer.msg(res.msg,{time: 1000,end: function () {
+                location.href = "/home/resume/admin"
+              }})
+          } else {
+            layer.msg(res.msg);
+            return false;
+          }
+        },error:function (data) {
+          layer.msg(data);
+          return false;
+        }
+      });
+      return false;
+    });
+
+  });
+
+</script>
+
+{/block}

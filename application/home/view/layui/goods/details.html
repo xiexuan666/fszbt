@@ -1,0 +1,199 @@
+{extend name="public/container"}
+
+{block name="title"}
+<?php \app\core\util\SystemConfigService::get('site_name') ?>
+{/block}
+
+{block name="content"}
+
+<div class="layui-container house-detail">
+  <p class="title"><a href="index.html">首页</a> &gt; <a href="list.html">家居用品</a> &gt; <span>产品详情</span></p>
+  <div class="layui-row price">
+    <div class="layui-col-sm6">
+      <div class="intro-img"><img src="{__HOME_PATH}/layui/static/img/goods_img1.jpg"></div><ul class="thumb">
+        <li><img src="{__HOME_PATH}/layui/static/img/goods_img2.jpg"></li>
+        <li><img src="{__HOME_PATH}/layui/static/img/goods_img3.jpg"></li>
+        <li><img src="{__HOME_PATH}/layui/static/img/goods_img4.jpg"></li>
+        <li><img src="{__HOME_PATH}/layui/static/img/goods_img5.jpg"></li>
+      </ul>
+    </div>
+    <div class="layui-col-sm6 shopChoose">
+      <div class="title"><p><span class="layui-badge">新品</span>轻奢吊灯现代极简创意灯具</p>好评率  <span>90%</span></div>
+      <p><span>￥<big><b>199</b></big></span>原价￥<big><del>399</del></big></p>
+      <dl><dt>颜色</dt><dd>白色</dd><dd class="active">灰色</dd><dd>黑色</dd></dl>
+      <dl><dt>尺寸</dt><dd>1.2米</dd><dd class="active">0.5米</dd></dl>
+      <div class="number layui-form">
+        <label>数量</label>
+        <div class="layui-input-inline btn-input">
+          <button class="layui-btn layui-btn-primary sup">-</button>
+          <input type="text" class="layui-input">
+          <button class="layui-btn layui-btn-primary sub">+</button>
+        </div>
+        <p class="inputTips">已超出库存数量！</p>
+      </div>
+      <div class="shopBtn">
+        <button class="layui-btn layui-btn-primary sale">立即购买</button>
+        <button class="layui-btn shop"><i class="layui-icon layui-icon-house-shop"></i>加入购物车</button>
+        <button class="layui-btn layui-btn-primary collect"><i class="layui-icon layui-icon-rate" id="collect"></i>收藏</button>
+      </div>
+    </div>
+  </div>
+  <div class="layui-row layui-col-space30">
+    <div class="layui-col-sm8 detailTab">
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">详情</li>
+          <li>评论 <span>(120)</span></li>
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+            <img src="{__HOME_PATH}/layui/static/img/goods_img3.jpg">
+            <img src="{__HOME_PATH}/layui/static/img/goods_img4.jpg">
+            <img src="{__HOME_PATH}/layui/static/img/goods_img5.jpg">
+          </div>
+          <div class="layui-tab-item">
+            <div class="comment">
+              <ul>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+                <li>
+                  <div class="img"><img src="{__HOME_PATH}/layui/static/img/person.png"></div>
+                  <p class="txt">质量还可以！纯棉的，盖着挺舒服的，对皮肤也好。</p>
+                  <p class="time">2018年05月02日 11:20</p>
+                </li>
+              </ul>
+              <div id="detailList"></div>
+              </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="layui-col-sm4 detailCom">
+      <p class="title">热销推荐</p>
+      <ul class="detailCom-content hot-sell"> 
+        <li><a class="text">
+          <div><img src="{__HOME_PATH}/layui/static/img/goods_img6.jpg"></div>
+          <p>森系小清新四件套</p>
+          <p class="price">￥200</p>
+        </a></li>
+        <li><a class="text">
+          <div><img src="{__HOME_PATH}/layui/static/img/goods_img7.jpg"></div>
+          <p>森系小清新四件套</p>
+          <p class="price">￥200</p>
+        </a></li>
+        <li><a class="text">
+          <div><img src="{__HOME_PATH}/layui/static/img/goods_img8.jpg"></div>
+          <p>森系小清新四件套</p>
+          <p class="price">￥200</p>
+        </a></li>
+        <li><a class="text">
+          <div><img src="{__HOME_PATH}/layui/static/img/goods_img9.jpg"></div>
+          <p>森系小清新四件套</p>
+          <p class="price">￥200</p>
+        </a></li>
+        <li><a class="text">
+          <div><img src="{__HOME_PATH}/layui/static/img/goods_img6.jpg"></div>
+          <p>森系小清新四件套</p>
+          <p class="price">￥200</p>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '{__HOME_PATH}/layui/static/js/'
+  }).use('house');
+</script>
+
+{/block}

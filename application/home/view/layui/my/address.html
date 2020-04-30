@@ -1,0 +1,156 @@
+{extend name="public/container"}
+
+{block name="title"}
+<?php \app\core\util\SystemConfigService::get('site_name') ?>
+{/block}
+
+{block name="content"}
+
+<div class="layui-container userpublic useradd">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">首页 &gt; <span>个人中心</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <table class="layui-table" id="user-address" lay-filter="user-address"></table>
+      <button class="layui-btn layui-btn-primary address-add"><i class="layui-icon layui-icon-add-1">添加地址</i></button>
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="spaceTpl">
+  {{#  if(d.is_default){ }}
+    <span id="default">默认</span>
+  {{#  } }}
+</script>
+<script type="text/html" id="addressTpl">
+  <span>{{d.province}}</span>
+  <span>{{d.city}}</span>
+  <span>{{d.district}}</span>
+  <span>{{d.detail}}</span>
+</script>
+<script type="text/html" id="operationTpl">
+  <a lay-event="del" class="layui-btn layui-btn-xs layui-btn-danger"><i class="layui-icon layui-icon-delete"></i>删除</a>
+  <a lay-event="edit" class="layui-btn layui-btn-xs"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+</script>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  /**
+   @Name: 个人中心资讯管理
+   @Author: wshbin
+   @Copyright: wshbin
+   */
+  layui.define(['element', 'carousel', 'table', 'util'], function(exports){
+    var $ = layui.$
+            ,table = layui.table;
+
+    //TODO 请求资讯列表
+    table.render({
+      elem: '#user-address'
+      ,url:  '/home/my/get_address_list'
+      ,skin: 'line'
+      ,cols: [[
+        {type:'space', width:100, align:'center', templet: '#spaceTpl', width:90}
+        ,{field:'real_name', title:'收货人', align:'center', width:90}
+        ,{field:'address', title:'地址', align:'center', templet: '#addressTpl'}
+        ,{field:'phone', title:'联系方式', align:'center', width:120}
+        ,{title:'操作', align:'center', templet: '#operationTpl', width:150}
+      ]]
+    });
+
+    //TODO 地址管理——监听工具条
+    table.on('tool(user-address)', function(obj){
+      var data = obj.data;
+      if(obj.event === 'del'){
+        layer.confirm('真的删除行么', function(index){
+          obj.del();
+          layer.close(index);
+        });
+      }else if(obj.event === 'edit'){
+        layer.open({
+          type: 2
+          ,title: '编辑地址'
+          ,content: '/home/my/iframe.html'
+          ,area: ['730px', '420px']
+          ,shade: 0.8
+          ,skin: 'address-class'
+          ,btn: '确定'
+          ,yes: function(index, layero){
+            window['layui-layer-iframe'+ index].layui.form.on('submit(useradd-submit)', function(data){
+              layer.close(index);
+            });
+            layero.find('iframe').contents().find("#useradd-submit").trigger('click');
+          }
+        });
+      }
+    });
+    $(".useradd").find(".address-add").on('click', function(){
+      layer.open({
+        type: 2
+        ,title: '新建地址'
+        ,content: '/home/my/iframe.html'
+        ,area: ['730px', '420px']
+        ,shade: 0.8
+        ,skin: 'address-class'
+        ,btn: '确定'
+        ,yes: function(index, layero){
+          window['layui-layer-iframe'+ index].layui.form.on('submit(useradd-submit)', function(data){
+            layer.close(index);
+          });
+          layero.find('iframe').contents().find("#useradd-submit").trigger('click');
+        }
+      });
+    });
+
+
+
+
+    //TODO 监听事件 编辑 删除
+    table.on('tool(house-user-order)', function(obj){
+      var data = obj.data;
+      if(obj.event === 'evaluate'){
+        var url = '/home/my/user_take_order';
+        $.getJSON(url, data, function(res){
+          if(res.code == 200){
+            layer.msg(res.msg,{
+              time: 1000,
+              end: function () {
+                obj.del();
+                layer.close(index);
+              }
+            })
+          } else {
+            alert(res.msg);
+            return false;
+          }
+        });
+      } else if(obj.event === 'check') {
+        layer.confirm('确定取消？', function(index){
+          var url = '/home/my/user_remove_order';
+          $.getJSON(url, data, function(res){
+            if(res.code == 200){
+              layer.msg(res.msg,{
+                time: 1000,
+                end: function () {
+                  obj.del();
+                  layer.close(index);
+                }
+              })
+            } else {
+              alert(res.msg);
+              return false;
+            }
+          });
+        });
+      }
+    });
+    exports('house', {});
+  })
+</script>
+
+{/block}

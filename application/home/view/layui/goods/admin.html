@@ -1,0 +1,128 @@
+{extend name="public/container"}
+{block name="title"}产品管理{/block}
+{block name="content"}
+
+<div class="layui-container userpublic house-userPer">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">个人中心 <i class="layui-icon layui-icon-right"></i> <span>产品管理</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <a href="/home/goods/series" class="layui-btn layui-btn-normal">系列管理 <i class="layui-icon layui-icon-template-1"></i></a>
+      <a href="/home/goods/create" class="layui-btn">添加产品 <i class="layui-icon layui-icon-add-circle-fine"></i></a>
+    </div>
+    <div class="layui-col-sm10">
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">产品列表</li>
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+            <table id="house-user-order" lay-filter="house-user-order"></table>
+          </div>
+          <div class="layui-tab-item">
+            
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="imgTpl">
+  <img src="{{d.image}}">
+</script>
+
+<script type="text/html" id="priceTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    {{#  if(d.is_price == 1){ }}
+    <p>￥{{d.price}}</p>
+    {{#  } else { }}
+    <p>免费</p>
+    {{#  } }}
+  </div>
+</script>
+<script type="text/html" id="statusTpl">
+  {{#  if(d.is_show == 1){ }}
+    <span style="color: #999;">显示</span>
+  {{#  } else { }}
+    <span style="color: #e09b4e;">待审核</span>
+  {{#  } }}
+</script>
+<script type="text/html" id="orderTpl">
+  <div style="text-align: left; display: inline-block; vertical-align: middle;">
+    <p>资讯ID：{{d.id}}</p>
+    <p>标题：{{d.title}}</p>
+  </div>
+</script>
+<script type="text/html" id="handleTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+  </div>
+</script>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  /**
+   @Name: 产品管理
+   @Author: wshbin
+   @Copyright: wshbin
+   */
+  layui.define(['element', 'carousel', 'table', 'util'], function(exports){
+    var $ = layui.$
+      ,table = layui.table;
+
+    //TODO 请求资讯列表
+    table.render({
+      elem: '#house-user-order'
+      ,url:  '/home/goods/get_list'
+      ,skin: 'line'
+      ,cols: [[
+        {title:'ID', field:'id', align:'center', width:80}
+        ,{title:'封面', templet: '#imgTpl', align:'center', width:100}
+        ,{title:'系列', field:'cname'}
+        ,{title:'状态', align:'center', templet: '#statusTpl', width:100}
+        ,{title:'操作', align:'center', templet: '#handleTpl', width:150}
+      ]]
+    });
+
+    //TODO 监听事件 编辑 删除
+    table.on('tool(house-user-order)', function(obj){
+      var data = obj.data;
+      console.log(data)
+      if(obj.event === 'edit'){
+        location.href = "/home/goods/create?id="+data.id
+      } else if(obj.event === 'del') {
+        layer.confirm('确定删除？', function(index){
+
+          var url = '/home/goods/del';
+          $.getJSON(url, data, function(res){
+            if(res.code == 200){
+              layer.msg(res.msg,{
+                time: 1000,
+                end: function () {
+                  obj.del();
+                  layer.close(index);
+                }
+              })
+            } else {
+              alert(res.msg);
+              return false;
+            }
+          });
+
+        });
+      }
+    });
+
+    exports('house', {});
+  })
+</script>
+
+{/block}

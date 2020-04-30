@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>文章动态_{$seo['title']}</title>
+	<meta name="keywords" content="{$seo['keywords']}" />
+	<meta name="description" content="{$seo['description']}" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="copyright" content="Copyright www.tanmzh.com 版权所有" />
+
+	<link href="__TEMPLATE__default/static/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="__TEMPLATE__default/static/css/inner.min.css" rel="stylesheet" />
+	<!--[if lt IE 9]>
+	<script src="__TEMPLATE__default/static/js/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="__TEMPLATE__default/static/js/jquery.min.js"></script>
+	<script src="__TEMPLATE__default/static/js/bootstrap.min.js"></script>
+	<script src="__TEMPLATE__default/static/js/inner.min.js"></script>
+</head>
+
+<body>
+<header>
+	<div class="box">
+		<a href="{:url('Index/index')}" title="{$settings.site_name}"><img src="{if $settings.logo}{$settings.logo}{else}__TEMPLATE__default/static/images/logo_cases.png{/if}" alt="{$settings.site_name}" /></a>
+		{if $settings.qr_code}
+		<div class="wechat">
+			<img src="{$settings.qr_code}" alt="扫描关注{$settings.site_name}微信公众账号" class="wechat" /><p>扫一扫微信二维码<i></i></p>
+		</div>
+		{/if}
+		<nav>
+			<ul>
+				<li><a href="{:url('Index/index')}">首页</a></li>
+				{volist name="categorys[0][0]" id="vo"}
+				{if condition="$categorys[$vo]['is_menu'] == 1"}
+				<li><a href="{$categorys[$vo]['url']}">{$categorys[$vo]['name']}</a></li>
+				{/if}
+				{/volist}
+			</ul>
+		</nav>
+	</div>
+
+</header>
+
+<section class="toolbar">
+	<a href="{:url('Index/index')}" title="返回首页" class="homelink"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<span class="switch glyphicon glyphicon-th-list"></span>
+	<div class="category btn-group">
+		<a href="{:url('Article/index',array('category_id'=>1))}" class="btn btn-default btn-primary">全部</a>
+		{volist name="second_categorys" id="vo"}
+		<a href="{$vo['url']}" class="btn btn-default">{$vo['name']}</a>
+		{/volist}
+	</div>
+</section>
+
+<section class="artlist content">
+	<ul class="items">
+		{volist name="lists" id="vo"}
+		<li>
+			<p class="left">
+				<span class="date">05<u>Jun</u></span>
+				{notempty name='vo[image_url]'}
+				<a href="{$vo['url']}" target="_blank" class="thumb">
+					<img src="{$vo['image_url']|thumb=165,110,3}" alt="{$vo['title']}" />
+				</a>
+				{/notempty}
+			</p>
+			<p class="right">
+				<span class="title"><a href="{$vo['url']}" target="_blank">{$vo['title']}</a></span>
+				<span class="rel">{$vo['create_time']|format_datetime}<u>•</u>{$vo['hits']} ℃<u>•</u><a href="{$categorys[$vo['category_id']]['url']}">{$categorys[$vo['category_id']]['name']}</a></span>
+				<span class="summary">{$vo['description']}</span>
+				<span class="tags">
+                	<span class="glyphicon glyphicon-tag"></span>
+					<?php $hello = explode(',',$vo['keywords']);  ?>
+					<?php foreach($hello as $val){ ?>
+                    <a href="">{$val}</a>&nbsp;
+					<?php } ?>
+                </span>
+			</p>
+		</li>
+		{/volist}
+
+	</ul>
+	<div id="Paging" class="paging">
+		<div class="qzPagination">
+			{$page}
+		</div>
+	</div>
+</section>
+
+<div class="dock">
+	<ul class="icons">
+		<li class="up"><i></i></li>
+		<li class="tel">
+			<i></i><p>建站咨询热线<br />0757-63266989</p>
+		</li>
+		<li class="im">
+			<i></i><p><a href="http://wpa.qq.com/msgrd?v=3&uin=304886883&site=qq&menu=yes" target="_blank">点我，建站咨询</a></p>
+		</li>
+	</ul>
+</div>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?a821a161aa4214f5ff5b8ca372960ebb";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

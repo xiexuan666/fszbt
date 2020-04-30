@@ -1,0 +1,47 @@
+{extend name="public/container"}
+
+{block name="title"}
+<?php \app\core\util\SystemConfigService::get('site_name') ?>
+{/block}
+
+{block name="content"}
+
+<div class="layui-fulid house-about">
+  <div class="house-about-banner"></div>
+  <div class="layui-row">
+    <p class="title">精心采购</p>
+    <p>百家货源千挑万选，只为保证最优质量</p>
+    <div class="buy">
+      <div class="layui-col-xs6"><img src="{__HOME_PATH}/layui/static/img/us_img1.jpg"></div>
+      <div class="layui-col-xs6"><img src="{__HOME_PATH}/layui/static/img/us_img2.jpg"></div>
+    </div>
+    <p class="title">严格品质</p>
+    <p>专业质检团队细心层层把关</p>
+    <div class="screen">
+      <div class="layui-col-xs4"><img src="{__HOME_PATH}/layui/static/img/us_img3.png"></div>
+      <div class="layui-col-xs4"><img src="{__HOME_PATH}/layui/static/img/us_img4.png"></div>
+      <div class="layui-col-xs4"><img src="{__HOME_PATH}/layui/static/img/us_img5.png"></div> 
+    </div>
+    <p class="title">配送售后</p>
+    <p>给您最快最安全的物流，最优质的售后服务</p>
+    <div class="after">
+      <div class="layui-col-xs4"><span><i class="layui-icon layui-icon-house-shield"></i></span><p>7天无理由退换货</p></div>
+      <div class="layui-col-xs4"><span><i class="layui-icon layui-icon-house-car"></i></span><p>全场满99元顺丰包邮</p></div>
+      <div class="layui-col-xs4"><span><i class="layui-icon layui-icon-house-service"></i></span><p>优质客服服务</p></div>
+    </div>
+  </div>
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '{__HOME_PATH}/layui/static/js/'
+  }).use('house');
+</script>
+
+{/block}

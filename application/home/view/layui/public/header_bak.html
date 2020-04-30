@@ -1,0 +1,69 @@
+<div class="house-header">
+    <div class="layui-container">
+        <div class="house-nav">
+            <span class="layui-breadcrumb" lay-separator="|">
+                <?php if($userInfo['uid']){ ?>
+                    <a href="/home/my/index.html">欢迎 {$userInfo.nickname} 访问{$siteData.site_name}</a>
+                    <a href="/home/my/index.html">我的订单</a>
+                <?php } else { ?>
+                    <a href="/home/login/index.html">登录</a>
+                <?php } ?>
+            </span>
+            <span class="layui-breadcrumb house-breadcrumb-icon" lay-separator=" ">
+                <a id="search"><i class="layui-icon layui-icon-house-find"></i></a>
+                <a href="/home/my/index.html"><i class="layui-icon layui-icon-username"></i></a>
+                <a href="/home/store/cart.html"><i class="layui-icon layui-icon-house-shop"></i></a>
+            </span>
+        </div>
+        <div class="house-banner layui-form">
+            <a class="banner" href="/home/index.html">
+                <img src="{$siteData['routine_logo']}" alt="{$siteData['site_name']}">
+            </a>
+            <div class="layui-input-inline">
+                <input type="text" placeholder="智能搜索" class="layui-input"><i class="layui-icon layui-icon-house-find"></i>
+            </div>
+            <a class="shop" href="/home/store/cart.html"><i class="layui-icon layui-icon-house-shop"></i><span class="layui-badge">1</span></a>
+        </div>
+        <ul class="layui-nav close" style="padding: 0;">
+            <li class="layui-nav-item <?php if($controller == 'Index' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/index/index.html">首页</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Store' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/store/index.html">新品</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Brand' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/brand/index.html">品牌</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Supply' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/supply/index.html">招商</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Article' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/article/index.html">资讯</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Job' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/job/index.html">招聘</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Resume' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/resume/index.html">人才</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Knowledge' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/knowledge/index.html">干货</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Company' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/company/index.html">企业</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Dealers' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/dealers/index.html">经销商</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'Supplier' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/supplier/index.html">供应商</a>
+            </li>
+            <li class="layui-nav-item <?php if($controller == 'My' && $action == 'index'){ echo 'layui-this'; } ?>">
+                <a href="/home/my/index.html">用户中心</a>
+            </li>
+        </ul>
+        <button id="switch">
+            <span></span><span class="second"></span><span class="third"></span>
+        </button>
+    </div>
+</div>

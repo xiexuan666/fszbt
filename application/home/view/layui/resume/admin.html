@@ -1,0 +1,171 @@
+{extend name="public/container"}
+{block name="title"}简历管理{/block}
+{block name="content"}
+
+<div class="layui-container userpublic house-userPer">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">个人中心 <i class="layui-icon layui-icon-right"></i> <span>简历管理</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <a href="/home/resume/create" class="layui-btn">求职状态 <i class="layui-icon layui-icon-edit"></i></a>
+      <a href="/home/resume/expect" class="layui-btn layui-btn-normal">添加求职期望 <i class="layui-icon layui-icon-add-circle-fine"></i></a>
+      <a href="/home/resume/work" class="layui-btn layui-btn-warm">添加工作经历 <i class="layui-icon layui-icon-add-circle-fine"></i></a>
+      <a href="/home/resume/education" class="layui-btn layui-btn-danger">添加教育经历 <i class="layui-icon layui-icon-add-circle-fine"></i></a>
+    </div>
+    <div class="layui-col-sm10">
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">我的简历</li>
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+            <table id="house-user-order" lay-filter="house-user-order"></table>
+          </div>
+          <div class="layui-tab-item">
+            
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="expectTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <ul>
+      {{# layui.each(d.expect, function(index, item){ }}
+      <li>
+        <span>{{ item.position }}·{{ item.salary }}</span>
+      </li>
+      <li>
+        <span>{{ item.city }}·{{ item.industry }}</span>
+      </li>
+      <li>
+        <a class="layui-btn layui-btn-xs" href="/home/resume/expect?id={{ item.id }}"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+        <a class="layui-btn layui-btn-xs layui-btn-danger" href="/home/resume/expect_del?id={{ item.id }}"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+      </li>
+      {{# }); }}
+      {{# if(d.expect.length === 0){ }}
+      无数据
+      {{# } }}
+    </ul>
+  </div>
+</script>
+
+<script type="text/html" id="workTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <ul>
+      {{# layui.each(d.work, function(index, item){ }}
+      <li>
+        <span>{{ item.name }}</span>
+      </li>
+      <li>
+        <span>{{ item.position }}·{{ item.start_time }}-{{ item.stop_time }}</span>
+      </li>
+      <li>
+        <a class="layui-btn layui-btn-xs" href="/home/resume/work?id={{ item.id }}"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+        <a class="layui-btn layui-btn-xs layui-btn-danger" href="/home/resume/work_del?id={{ item.id }}"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+      </li>
+      {{# }); }}
+      {{# if(d.work.length === 0){ }}
+      无数据
+      {{# } }}
+    </ul>
+  </div>
+</script>
+
+<script type="text/html" id="educationTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <ul>
+      {{# layui.each(d.education, function(index, item){ }}
+      <li>
+        <span>{{ item.name }}·{{ item.education }}</span>
+      </li>
+      <li>
+        <span>{{ item.professional }}·{{ item.start_time }}·{{ item.stop_time }}</span>
+      </li>
+      <li>
+        <a class="layui-btn layui-btn-xs" href="/home/resume/education?id={{ item.id }}"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+        <a class="layui-btn layui-btn-xs layui-btn-danger" href="/home/resume/education_del?id={{ item.id }}"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+      </li>
+      {{# }); }}
+      {{# if(d.education.length === 0){ }}
+      无数据
+      {{# } }}
+    </ul>
+  </div>
+</script>
+
+<script type="text/html" id="handleTpl">
+  <div style="display: inline-block; vertical-align: middle;">
+    <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>  编辑</a>
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del"><i class="layui-icon layui-icon-delete"></i>  删除</a>
+  </div>
+</script>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+  /**
+   @Name: 新品管理
+   @Author: wshbin
+   @Copyright: wshbin
+   */
+  layui.define(['element', 'carousel', 'table', 'util'], function(exports){
+    var $ = layui.$
+      ,table = layui.table;
+
+    //TODO 请求列表
+    table.render({
+      elem: '#house-user-order'
+      ,url:  '/home/resume/get_list'
+      ,skin: 'line'
+      ,cols: [[
+        {title:'ID', field:'id', align:'center', width:80}
+        ,{title:'求职状态', field:'status', width:120}
+        ,{title:'求职期望', templet: '#expectTpl'}
+        ,{title:'工作经验', templet: '#workTpl'}
+        ,{title:'教育经历', templet: '#educationTpl'}
+      ]]
+    });
+
+    //TODO 监听事件 编辑 删除
+    table.on('tool(house-user-order)', function(obj){
+      var data = obj.data;
+      console.log(data)
+      if(obj.event === 'edit'){
+        location.href = "/home/job/create?id="+data.id
+      } else if(obj.event === 'del') {
+        layer.confirm('确定删除？', function(index){
+          console.log(data);
+          return;
+          var url = '/home/job/del';
+          $.getJSON(url, data, function(res){
+            if(res.code == 200){
+              layer.msg(res.msg,{
+                time: 1000,
+                end: function () {
+                  obj.del();
+                  layer.close(index);
+                }
+              })
+            } else {
+              alert(res.msg);
+              return false;
+            }
+          });
+
+        });
+      }
+    });
+
+    exports('house', {});
+  })
+</script>
+
+{/block}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>{$data.title}</title>
+    <link rel="stylesheet" href="{__HOME_PATH}/layui/news/layui/css/layui.css">
+    <link rel="stylesheet" href="{__HOME_PATH}/layui/news/static/css/index.css">
+</head>
+<body>
+<!-- nav部分 -->
+<div class="nav">
+    <div class="layui-container">
+        <!-- 公司logo -->
+        <div class="nav-logo">
+            <a href="/home/index/index">
+                <img src="{$siteData['routine_logo']}" alt="{$siteData['site_name']}" style="max-height: 40px;">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="/home/index/index">首页</a></li>
+                <li class="layui-nav-item layui-this"><a href="/home/news/lists">动态</a></li>
+                <li class="layui-nav-item"><a href="/home/my/index">用户中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- main部分 -->
+<div class="main-newsdate">
+    <div class="layui-container">
+        <p class="news"><a href="/home/news/lists">实时动态</a> > 动态详情</p>
+        <h1>{$data.title}</h1>
+        <p class="pushtime">发布时间：<span>{$data.add_time|date='Y-m-d H:i',###}</span></p>
+        <p class="introTop">{$data.synopsis}</p>
+        <div><img src="{$data.image}" alt="{$data.title}"></div>
+        <div class="introBott">{$data.description}</div>
+    </div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+    <div class="layui-container">
+        <div class="layui-row footer-contact" style="text-align: center;">
+            <span class="right"><a href="">{$siteData.site_name}</a>版权所有</span><span class="right">&nbsp;©&nbsp;2020-2030</span>
+        </div>
+    </div>
+</div>
+<script src="{__HOME_PATH}/layui/news/layui/layui.js"></script>
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.config({
+        base: '{__HOME_PATH}/layui/news/static/js/'
+    }).use('firm');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>招聘管理</title>
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core /static/css -->
+  <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external /static/css-->
+  <link href="/static/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text//static/css" href="/static/css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text//static/css" href="/static/lib/gritter/css/jquery.gritter.css" />
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link href="/static/css/style-responsive.css" rel="stylesheet">
+  <script src="/static/lib/chart-master/Chart.js"></script>
+
+  
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo">
+          <img src="/static/img/logo2.jpg" width="90">
+      </a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="">退出登陆</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered" id="head"><a href="profile.html"><img src="/static/img/ui-sam.jpg" class="/static/img-circle" width="80"></a></p>
+          <h5 class="centered" id="acc">Sam Soffes</h5>
+          <li class="mt">
+            <a href="javascript:;">
+              <i class="fa fa-dashboard"></i>
+              <span>品牌商管理</span>
+              </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>产品管理</span>
+              </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>新品管理</span>
+              </a>
+
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>招商管理</span>
+              </a>
+
+          </li>
+          <li>
+            <a class="active" href="javascript:;">
+              <i class="fa fa-tasks"></i>
+              <span>招聘管理</span>
+              </a>
+
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>资讯管理</span>
+              </a>
+
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="fa fa-envelope"></i>
+              <span>干货管理</span>
+              </a>
+          </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+
+   <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <!--CUSTOM CHART START -->
+            <div class="row m-top">
+               <div class="col-lg-7">
+            	<button type="button" class="btn btn-theme btn1" ><i class="fa fa-plus"></i><a href="http://localhost:8080/User/JobSave"> 发布职位</a></button>
+                <button type="button" class="btn btn-theme btn1"><i class="fa fa-user"></i> 推荐人才</button>
+                <button type="button" class="btn btn-theme btn1"><i class="fa fa-users"></i> 打开人才库</button>
+               </div>
+               <div class="col-lg-5">
+                    <form class="form-inline pull-right" role="form">
+                        <div class="form-group">
+                          <label class="sr-only" for="search">搜索相关人才</label>
+                          <input type="text" class="form-control" id="search" placeholder="搜索相关人才">
+                        </div>
+
+                        <button type="submit" class="btn btn-theme btn-search1"><i class="fa fa-search"></i></button>
+                   </form>
+               </div>
+               <div class="clearfix"></div>
+
+            </div>
+
+
+
+
+            <h3 class="mt-20 position-title1"><i class="fa fa-angle-down"></i><span class="position-span2">已发布职位</span></h3>
+            <div class="row mt" id="jl">
+              <div class="col-lg-12 mb">
+                <div class="row content-panel grey-all">
+
+                  <div class="col-md-2 centered">
+                    <div class="profile-pic">
+                      <p><mg src="/static/img/ui-sam.jpg" class="/static/img-circle"></p>
+
+                    </div>
+                  </div>
+                  <!-- /col-md-4 -->
+
+                  <div class="col-md-5 profile-text">
+                    <h3>企业招聘职务<span class="closed">已关闭</span></h3>
+                    <h6 class="mt-5">企业全称</h6>
+                    <p>
+                        <span class="span-r">工作地点：</span><span class="text-muted">顺德</span> <span class="line-pd">|</span>
+                        <span class="span-r">学历：</span><span class="text-muted"> 本科</span> <span class="line-pd">|</span>
+                        <span class="span-r">工作经验：</span> <span class="text-muted">5年</span></p>
+                    <p>发布时间：2020-04-21</p>
+                    <br>
+
+                  </div>
+                  <!-- /col-md-4 -->
+
+                  <div class="col-md-3 profile-text mt mb centered">
+                    <div class="right-divider hidden-sm hidden-xs">
+                       <h5>待遇</h5>
+                       <h4>5000-6000</h4>
+
+                       <h5>福利目标</h5>
+                       <h5>
+                           <span class="icon-width"><img src="/static/img/icon-baochi.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-baozhu.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-daixin.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-jintie.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-nianzj.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-peixun.png" width="20"></span>
+                           <span class="icon-width"><img src="/static/img/icon-shebao.png" width="20"></span>
+                       </h5>
+                    </div>
+                  </div>
+                  <!-- /col-md-4 -->
+
+                  <div class="col-md-2 profile-text mt mb centered">
+                    <div class="hidden-sm hidden-xs">
+                       <p class="mt-40">
+                          <button class="btn btn-theme"><i class="fa fa-search"></i><span class="line-pd">查看</span></button>
+                          <span class="m-edit">
+                              <a href="#" class="a1">编辑</a>
+                              <a href="#" class="a1">分享</a>
+                              <a id="delete" class="tab-on">关闭</a>
+                          </span>
+                       </p>
+                    </div>
+                  </div>
+                  <!-- /col-md-4 -->
+
+
+                </div>
+                <!-- /row -->
+              </div>
+
+
+
+        </div>
+
+
+
+          </div>
+          <!-- /col-lg-9 END SECTION MIDDLE -->
+          <!-- **********************************************************************************************************************************************************
+              RIGHT SIDEBAR CONTENT
+              *********************************************************************************************************************************************************** -->
+
+
+        </div>
+        <!-- /row -->
+      </section>
+    </section>
+    <!--main content end-->
+
+
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>招宝通</strong>. All Rights Reserved
+        </p>
+
+        <a href="index.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="/static/lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="/static/lib/jquery.scrollTo.min.js"></script>
+  <script src="/static/lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="/static/lib/jquery.sparkline.js"></script>
+  <!--common script for all pages-->
+  <script src="/static/lib/common-scripts.js"></script>
+  <script type="text/javascript" src="/static/lib/gritter/js/jquery.gritter.js"></script>
+  <script type="text/javascript" src="/static/lib/gritter-conf.js"></script>
+  <!--script for this page-->
+  <script src="/static/lib/sparkline-chart.js"></script>
+  <script src="/static/lib/zabuto_calendar.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var unique_id = $.gritter.add({
+        // (string | mandatory) the heading of the notification
+        title: 'Welcome to ZhaoBaoTong!',
+        // (string | mandatory) the text inside the notification
+        text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo.',
+        // (string | optional) the image to display on the left
+        image: '/static/img/ui-sam.jpg',
+        // (bool | optional) if you want it to fade out on its own or just sit there
+        sticky: false,
+        // (int | optional) the time you want it to be alive for before fading out
+        time: 8000,
+        // (string | optional) the class name you want to apply to that specific message
+        class_name: 'my-sticky-class'
+      });
+        $(document).ready(function () {
+            $.ajax({
+                url:"http://localhost:8080/Job/UserJobList",
+                dataType:"json",
+                type:"GET",
+                data:{},
+                success:function (data) {
+                    $('#jl').empty();
+                    $('#head').empty();
+                    $('#acc').empty();
+                    // var newdata=JSON.parse(data);
+                    var html='';
+                    var html1='';
+                    var html2='';
+                    $.each(data.resultData,function (commentIndex, comment) {
+                        $.each(comment.userList,function (Uk,Uv) {
+                            html+='<div class="col-lg-12 mb">\n' +
+                                '                <div class="row content-panel" >' +
+                                '<div class="col-md-2 centered">\n' +
+                                '                    <div class="profile-pic">\n' +
+                                '                      <p><img src="'+Uv.avatar+'" class="img-circle"></p>\n' +
+                                '                      \n' +
+                                '                    </div>\n' +
+                                '                  </div>'
+                            html1='<img  src="'+Uv.avatar+'" class="img-circle" width="80">';
+                            html2='<h5 class="centered">'+Uv.nickname+'</h5>';
+                            $('#head').html(html1);
+                            $('#acc').html(html2);
+                        });
+                        $.each(comment.positionsList,function (Pk,Pv) {
+                            html+='<div class="col-md-5 profile-text" >\n' +
+                                '                    <h3>'+Pv.name+'</h3>'
+                        });
+                        $.each(comment.jobUserList,function (Jk, Jv) {
+                            html+=' <h6 class="mt-5">'+Jv.company+'</h6>';
+                        });
+                        html+='<p>\n' +
+                            '                        <span class="span-r">工作地点：</span><span class="text-muted"><a hidden id="id">'+comment.id+'</a>'+comment.address+'</span> <span class="line-pd">|</span> \n' +
+                            '                        <span class="span-r">学历：</span><span class="text-muted"> '+comment.education+'</span> <span class="line-pd">|</span> \n' +
+                            '                        <span class="span-r">工作经验：</span> <span class="text-muted">'+comment.skills+'</span></p>\n' +
+                            '                    <p>发布时间：'+comment.addTime+'</p>\n' +
+                            '                    <br>\n' +
+                            '                   \n' +
+                            '                  </div>\n' +
+                            '                  <!-- /col-md-4 -->\n' +
+                            '                  \n' +
+                            '                  <div class="col-md-3 profile-text mt mb centered">\n' +
+                            '                    <div class="right-divider hidden-sm hidden-xs">\n' +
+                            '                       <h5>待遇</h5>\n' +
+                            '                       <h4>'+comment.salary+'</h4>\n' +
+                            '                       \n' +
+                            '                       <h5>福利目标</h5>\n' +
+                            '                       <h5>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-baochi.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-baozhu.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-daixin.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-jintie.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-nianzj.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-peixun.png" width="20"></span>\n' +
+                            '                           <span class="icon-width"><img src="/static/img/icon-shebao.png" width="20"></span>\n' +
+                            '                       </h5>\n' +
+                            '                    </div>\n' +
+                            '                  </div>\n' +
+                            '                  <!-- /col-md-4 -->\n' +
+                            '                  \n' +
+                            '                  <div class="col-md-2 profile-text mt mb centered">\n' +
+                            '                    <div class="hidden-sm hidden-xs">\n' +
+                            '                       <p class="mt-40">\n' +
+                            '                          <button class="btn btn-theme"><i class="fa fa-search"></i><span class="line-pd">查看</span></button>\n' +
+                            '                          <span class="m-edit">\n' +
+                            '                              <a href="#" class="a1">编辑</a>\n' +
+                            '                              <a href="#" class="a1">分享</a>\n' +
+                            '                              <a href="#" class="tab-on">关闭</a>\n' +
+                            '                          </span>\n' +
+                            '                       </p>\n' +
+                            '                    </div>\n' +
+                            '                  </div>\n' +
+                            '                  <!-- /col-md-4 -->\n' +
+                            '                  \n' +
+                            '                  \n' +
+                            '                </div>\n' +
+                            '                <!-- /row -->\n' +
+                            '              </div>';
+                    });
+                    $('#jl').html(html);
+                }
+            })
+        });
+
+        $(function () {
+          $('#delete').click(function () {
+            $.ajax({
+              type:"",
+              url:"",
+              data:{},
+              dataType:"",
+              success:function (res) {
+
+              }
+            })
+          })
+        });
+      return false;
+    });
+  </script>
+  
+</body>
+
+</html>

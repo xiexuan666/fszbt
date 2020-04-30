@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:3:{i:0;a:5:{s:2:"id";i:124;s:3:"pic";s:73:"https://zbt.wshbin.com/public/uploads/attach/2019/12/06/5de9fa25ac391.png";s:5:"title";s:1:" ";s:4:"info";s:1:" ";s:4:"link";s:33:"/pages/activity/goods_raise/index";}i:1;a:5:{s:2:"id";i:125;s:3:"pic";s:73:"https://zbt.wshbin.com/public/uploads/attach/2019/12/06/5dea0314d8bbc.png";s:5:"title";s:1:" ";s:4:"info";s:1:" ";s:4:"link";s:35:"/pages/activity/goods_seckill/index";}i:2;a:5:{s:2:"id";i:126;s:3:"pic";s:73:"https://zbt.wshbin.com/public/uploads/attach/2019/12/06/5dea033d6c8c1.png";s:5:"title";s:1:" ";s:4:"info";s:1:" ";s:4:"link";s:34:"/pages/activity/goods_course/index";}}

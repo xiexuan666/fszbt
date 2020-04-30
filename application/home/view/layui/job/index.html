@@ -1,0 +1,174 @@
+{extend name="public/container"}
+
+{block name="title"}
+<?php \app\core\util\SystemConfigService::get('site_name') ?>
+{/block}
+
+{block name="content"}
+
+<div class="layui-container house-list">
+  <p class="classify"><a href="index.html">首页</a> &gt; <span>家居用品</span></p>
+  <div class="list-banner"></div>
+  <div class="filter">
+    <div><span>分类：</span><ul><li class="active">全部</li><li>床品</li><li>灯具</li><li>布艺</li><li>收纳</li><li>小家具</li></ul></div>
+    <div><span>季节：</span><ul><li class="active">全部</li><li>春</li><li>夏</li><li>秋</li><li>冬</li></ul></div>
+    <div><span>排序：</span><ul><li class="active">默认</li><li>价格<i class="layui-icon layui-icon-house-up"></i><i class="layui-icon layui-icon-triangle-d"></i></li><li>上架时间</li></ul></div>
+  </div>
+  <div class="layui-row layui-col-space25">
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img2.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img1.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img3.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img4.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img2.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img1.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img3.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img4.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img2.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img1.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img3.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img4.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img2.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img1.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img3.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img4.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img2.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img1.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img3.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+    <div class="layui-col-xs6 layui-col-sm3">
+      <div class="list-detail">
+        <div class="img"><img src="{__HOME_PATH}/layui/static/img/paging_img4.jpg"></div>
+        <p class="title"><a href="detail.html">森系小清新四件套</a></p>
+        <p><span class="price">￥200</span><span>1266</span>人付款</p> 
+      </div>
+    </div>
+  </div>
+  <div id="houseList"></div>
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '{__HOME_PATH}/layui/static/js/'
+  }).use('house');
+</script>
+
+{/block}

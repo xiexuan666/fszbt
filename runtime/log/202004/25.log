@@ -1,0 +1,4580 @@
+---------------------------------------------------------------
+[ 2020-04-25T10:21:50+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/wap/
+[运行时间：0.978783s] [吞吐率：1.02req/s] [内存消耗：1,740.64kb] [文件加载：97]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wap',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/public/install/index.php?step=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:22:12+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/admin/login/index
+[运行时间：0.249789s] [吞吐率：4.00req/s] [内存消耗：2,236.96kb] [文件加载：108]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/public/install/index.php?step=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\zbt\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\zbt/application/admin\view\login\index.php [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:22:12+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/admin/login/captcha.html
+[运行时间：0.094487s] [吞吐率：10.58req/s] [内存消耗：2,091.88kb] [文件加载：105]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/admin/login/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ D:\zbt\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'admin',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:22:24+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/wap/
+[运行时间：0.024861s] [吞吐率：40.22req/s] [内存消耗：1,740.84kb] [文件加载：97]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wap',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/public/install/index.php?step=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:23:08+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.311666s] [吞吐率：3.21req/s] [内存消耗：3,626.89kb] [文件加载：125]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000040s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:23:08+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html
+[运行时间：0.179833s] [吞吐率：5.56req/s] [内存消耗：3,894.33kb] [文件加载：130]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_login=0',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA=',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:23:08+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/captcha.html
+[运行时间：0.108355s] [吞吐率：9.23req/s] [内存消耗：3,434.45kb] [文件加载：119]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000048s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->captcha[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:24:02+08:00 ] 192.168.0.10 POST 192.168.0.10/index.php/home/login/check.html
+[运行时间：0.110358s] [吞吐率：9.06req/s] [内存消耗：3,918.55kb] [文件加载：129]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.0.10',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13416779592',
+  'pwd' => '123456',
+  'verify' => '5232',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000053s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->check[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\success.html [ array (
+  0 => 'siteData',
+  1 => 'title',
+  2 => 'msg',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:24:04+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.529690s] [吞吐率：1.89req/s] [内存消耗：5,523.66kb] [文件加载：142]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:24:09+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.170136s] [吞吐率：5.88req/s] [内存消耗：5,253.41kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/home/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000015s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:24:32+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.496536s] [吞吐率：2.01req/s] [内存消耗：6,215.80kb] [文件加载：153]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000020s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:25:43+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.310566s] [吞吐率：3.22req/s] [内存消耗：5,987.15kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000022s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:34:45+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.324985s] [吞吐率：3.08req/s] [内存消耗：5,987.15kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587781544',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:35:20+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.342715s] [吞吐率：2.92req/s] [内存消耗：5,987.42kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782085',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:35:31+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.314019s] [吞吐率：3.18req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782121',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:35:48+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.360297s] [吞吐率：2.78req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782132',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:36:27+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.337912s] [吞吐率：2.96req/s] [内存消耗：5,987.15kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782148',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000020s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:36:37+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.303698s] [吞吐率：3.29req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782188',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000022s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:36:53+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.294607s] [吞吐率：3.39req/s] [内存消耗：5,987.72kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=p019m408genbpo4f5krfdmooq7; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587781473; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782197',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:35+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.061289s] [吞吐率：16.32req/s] [内存消耗：3,626.59kb] [文件加载：125]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:35+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html
+[运行时间：0.049699s] [吞吐率：20.12req/s] [内存消耗：3,657.07kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA=',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:35+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/captcha.html
+[运行时间：0.117562s] [吞吐率：8.51req/s] [内存消耗：3,435.00kb] [文件加载：119]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000043s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->captcha[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:43+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.069717s] [吞吐率：14.34req/s] [内存消耗：3,626.82kb] [文件加载：125]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000032s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:43+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html
+[运行时间：0.049876s] [吞吐率：20.05req/s] [内存消耗：3,656.52kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA=',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000021s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:43+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/captcha.html
+[运行时间：0.080685s] [吞吐率：12.39req/s] [内存消耗：3,434.44kb] [文件加载：119]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000117s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->captcha[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:54+08:00 ] 192.168.0.10 POST 192.168.0.10/index.php/home/login/check.html
+[运行时间：0.077077s] [吞吐率：12.97req/s] [内存消耗：3,777.73kb] [文件加载：127]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.0.10',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13416779592',
+  'pwd' => '123456',
+  'verify' => '6376',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->check[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\success.html [ array (
+  0 => 'siteData',
+  1 => 'title',
+  2 => 'msg',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:37:55+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.196277s] [吞吐率：5.09req/s] [内存消耗：5,253.71kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:09+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/index.html
+[运行时间：0.082627s] [吞吐率：12.10req/s] [内存消耗：3,657.00kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'index',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:09+08:00 ] 192.168.0.10 POST 192.168.0.10/index.php/home/login/check.html
+[运行时间：0.102568s] [吞吐率：9.75req/s] [内存消耗：3,709.72kb] [文件加载：123]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.0.10',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13416779592',
+  'pwd' => '123456',
+  'verify' => '4806',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000026s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->check[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\error.html [ array (
+  0 => 'siteData',
+  1 => 'title',
+  2 => 'msg',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:10+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html
+[运行时间：0.087688s] [吞吐率：11.40req/s] [内存消耗：3,657.04kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA=',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:10+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/captcha.html
+[运行时间：0.117234s] [吞吐率：8.53req/s] [内存消耗：3,434.70kb] [文件加载：119]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000043s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->captcha[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:18+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/index.html
+[运行时间：0.089533s] [吞吐率：11.17req/s] [内存消耗：3,657.00kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'index',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:18+08:00 ] 192.168.0.10 POST 192.168.0.10/index.php/home/login/check.html
+[运行时间：0.097950s] [吞吐率：10.21req/s] [内存消耗：3,777.69kb] [文件加载：127]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.0.10',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13416779592',
+  'pwd' => '123456',
+  'verify' => '2228',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000048s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->check[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\success.html [ array (
+  0 => 'siteData',
+  1 => 'title',
+  2 => 'msg',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:19+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.195682s] [吞吐率：5.11req/s] [内存消耗：5,253.71kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000040s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:28+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.php
+[运行时间：0.166664s] [吞吐率：6.00req/s] [内存消耗：4,965.06kb] [文件加载：136]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\WapBasic->_empty[ D:\zbt\application\home\controller\WapBasic.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\error.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'title',
+  7 => 'msg',
+  8 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:30+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.237261s] [吞吐率：4.21req/s] [内存消耗：5,253.41kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/my/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000020s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:43+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.bak.html
+[运行时间：0.172775s] [吞吐率：5.79req/s] [内存消耗：4,965.18kb] [文件加载：136]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index.bak',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000030s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\WapBasic->_empty[ D:\zbt\application\home\controller\WapBasic.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\error.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'title',
+  7 => 'msg',
+  8 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:38:45+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.200644s] [吞吐率：4.98req/s] [内存消耗：5,253.71kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/my/index.bak.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:39:39+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.php
+[运行时间：0.182510s] [吞吐率：5.48req/s] [内存消耗：4,965.06kb] [文件加载：136]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\WapBasic->_empty[ D:\zbt\application\home\controller\WapBasic.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\error.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'title',
+  7 => 'msg',
+  8 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:39:40+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.184340s] [吞吐率：5.42req/s] [内存消耗：5,253.41kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/my/index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:40:07+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.292696s] [吞吐率：3.42req/s] [内存消耗：5,986.73kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000015s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:40:23+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.343663s] [吞吐率：2.91req/s] [内存消耗：6,154.73kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:40:48+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.334921s] [吞吐率：2.99req/s] [内存消耗：6,154.48kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782423',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000030s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:40:52+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.331769s] [吞吐率：3.01req/s] [内存消耗：5,987.16kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782449',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:41:12+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.308926s] [吞吐率：3.24req/s] [内存消耗：5,987.60kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782453',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:42:35+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.302976s] [吞吐率：3.30req/s] [内存消耗：5,987.60kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000021s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:53:15+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.312694s] [吞吐率：3.20req/s] [内存消耗：5,987.16kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587782556',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T10:59:22+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.355943s] [吞吐率：2.81req/s] [内存消耗：6,155.02kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587783196',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:00:00+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.339008s] [吞吐率：2.95req/s] [内存消耗：6,155.00kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587783563',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000023s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:00:23+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.336554s] [吞吐率：2.97req/s] [内存消耗：6,154.99kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587783600',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000071s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:00:49+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.334984s] [吞吐率：2.99req/s] [内存消耗：6,154.99kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587783624',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:09:06+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.311889s] [吞吐率：3.21req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587783650',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:10:04+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.364775s] [吞吐率：2.74req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784147',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:12:22+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.307105s] [吞吐率：3.26req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784205',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:14:08+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.365406s] [吞吐率：2.74req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784343',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:14:50+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.322592s] [吞吐率：3.10req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784449',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:18:45+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.346647s] [吞吐率：2.88req/s] [内存消耗：6,154.99kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784490',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:21:59+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.450646s] [吞吐率：2.22req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784726',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000046s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:24:25+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.329125s] [吞吐率：3.04req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587784923',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:26:54+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.384102s] [吞吐率：2.60req/s] [内存消耗：6,154.99kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587785066',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:27:39+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.347601s] [吞吐率：2.88req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587785215',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:27:40+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.304010s] [吞吐率：3.29req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587785215',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000065s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:36:34+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.314706s] [吞吐率：3.18req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587785261',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:40:51+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.297333s] [吞吐率：3.36req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587785795',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:44:58+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.321957s] [吞吐率：3.11req/s] [内存消耗：5,987.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=kgf08bmot0f0tfrrbucjhhc1u4; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786051',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000022s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:38+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php
+[运行时间：0.073893s] [吞吐率：13.53req/s] [内存消耗：3,626.59kb] [文件加载：125]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000040s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:38+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html
+[运行时间：0.050485s] [吞吐率：19.81req/s] [内存消耗：3,656.91kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_login=0',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA=',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:38+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/captcha.html
+[运行时间：0.094870s] [吞吐率：10.54req/s] [内存消耗：3,434.66kb] [文件加载：119]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->captcha[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:46+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/login/index/ref/index.html
+[运行时间：0.072629s] [吞吐率：13.77req/s] [内存消耗：3,657.21kb] [文件加载：126]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'index',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->index[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/login\index.html [ array (
+  0 => 'siteData',
+  1 => 'ref',
+  2 => 'banner',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:46+08:00 ] 192.168.0.10 POST 192.168.0.10/index.php/home/login/check.html
+[运行时间：0.090450s] [吞吐率：11.06req/s] [内存消耗：3,777.98kb] [文件加载：127]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.0.10',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/index/ref/aHR0cDovLzE5Mi4xNjguMC4xMC9pbmRleC5waHA%3D.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_login=0; is_bg=1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '13416779592',
+  'pwd' => '123456',
+  'verify' => '4107',
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000031s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->check[ D:\zbt\application\home\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/public\success.html [ array (
+  0 => 'siteData',
+  1 => 'title',
+  2 => 'msg',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:47:48+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.183310s] [吞吐率：5.46req/s] [内存消耗：5,253.89kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10/index.php/home/login/check.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:48:25+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.300073s] [吞吐率：3.33req/s] [内存消耗：5,986.92kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408; PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:53:38+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.295778s] [吞吐率：3.38req/s] [内存消耗：5,987.58kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786506',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:54:18+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.301000s] [吞吐率：3.32req/s] [内存消耗：5,987.58kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786819',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000032s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:54:46+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.338958s] [吞吐率：2.95req/s] [内存消耗：6,172.74kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786859',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:56:10+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.339653s] [吞吐率：2.94req/s] [内存消耗：6,154.98kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786887',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T11:56:50+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.350160s] [吞吐率：2.86req/s] [内存消耗：5,987.41kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://192.168.0.10//index.php',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587786971',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000018s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:09:04+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：1.116028s] [吞吐率：0.90req/s] [内存消耗：5,987.58kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587787010',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000020s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:21:31+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.317451s] [吞吐率：3.15req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587794944',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:26:51+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.346201s] [吞吐率：2.89req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587795691',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:27:46+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.333288s] [吞吐率：3.00req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796011',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:29:51+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.313777s] [吞吐率：3.19req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796067',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:36:45+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.313915s] [吞吐率：3.19req/s] [内存消耗：5,987.58kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796192',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000073s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:36:55+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.317651s] [吞吐率：3.15req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796606',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000019s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:37:06+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.340829s] [吞吐率：2.93req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796616',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:37:45+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.188186s] [吞吐率：5.31req/s] [内存消耗：5,253.56kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796627',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000022s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T14:37:50+08:00 ] 192.168.0.10 GET 192.168.0.10/index.php/home/my/index.html
+[运行时间：0.185854s] [吞吐率：5.38req/s] [内存消耗：5,253.56kb] [文件加载：138]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'my',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796627',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\My->index[ D:\zbt\application\home\controller\My.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/my\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'menus',
+  7 => 'orderStatusNum',
+  8 => 'notice',
+  9 => 'statu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T15:05:33+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.389177s] [吞吐率：2.57req/s] [内存消耗：6,154.73kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587796627',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T15:05:55+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.329196s] [吞吐率：3.04req/s] [内存消耗：5,987.38kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587798333',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000016s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T15:37:18+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.368578s] [吞吐率：2.71req/s] [内存消耗：6,173.77kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587798356',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T16:00:34+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.356813s] [吞吐率：2.80req/s] [内存消耗：6,174.20kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587800238',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T16:01:05+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.341335s] [吞吐率：2.93req/s] [内存消耗：6,173.98kb] [文件加载：152]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587801635',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T16:17:13+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：0.319277s] [吞吐率：3.13req/s] [内存消耗：6,003.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587801666',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000017s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-25T16:56:24+08:00 ] 192.168.0.10 GET 192.168.0.10//index.php
+[运行时间：1.858335s] [吞吐率：0.54req/s] [内存消耗：6,003.59kb] [文件加载：150]
+[ info ] [ LANG ] D:\zbt\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.0.10',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=c58b9ku0uldhd9r393ma3r0ie0; is_bg=1; is_login=1; Hm_lvt_a821a161aa4214f5ff5b8ca372960ebb=1587782408,1587786506; Hm_lpvt_a821a161aa4214f5ff5b8ca372960ebb=1587802634',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run behavior\wap\WapBehavior @wap_init [ RunTime:0.000029s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'prefix' => 'home',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\zbt\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\zbt/application/home/view/layui/index\index.html [ array (
+  0 => 'siteData',
+  1 => 'controller',
+  2 => 'action',
+  3 => 'get_key',
+  4 => 'my_menus',
+  5 => 'userInfo',
+  6 => 'banner',
+  7 => 'menus',
+  8 => 'roll',
+  9 => 'info',
+  10 => 'activity',
+  11 => 'lovely',
+  12 => 'likeInfo',
+  13 => 'logoUrl',
+  14 => 'routineUrl',
+  15 => 'couponList',
+  16 => 'news',
+) ]
+[ info ] [ LOG ] INIT File

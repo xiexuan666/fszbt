@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2019-2119 <a href="http://www.fszbt.com" target="_blank">www.fszbt.com</a> 佛山市招宝通信息科技有限公司出品</div>

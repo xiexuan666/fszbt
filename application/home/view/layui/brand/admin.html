@@ -1,0 +1,452 @@
+{extend name="public/container"}
+{block name="title"}完善品牌商信息{/block}
+{block name="content"}
+
+<div class="layui-container userpublic house-userPer">
+  <div class="layui-row layui-col-space20">
+    <p class="layui-hide-xs title">个人中心 <i class="layui-icon layui-icon-right"></i> <span>完善品牌商信息</span></p>
+    {include file="public/my_menu" /}
+    <div class="layui-col-sm10">
+      <a href="/home/my/index" class="layui-btn layui-btn-warm">返回个人中心 <i class="layui-icon layui-icon-return"></i></a>
+    </div>
+    <div class="layui-col-sm10">
+
+      <form class="layui-form" action="">
+        <input type="hidden" name="id" value="{$data.id}">
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">品牌商logo</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="logo">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="logo_img" src="{$data['logo']}">
+            <input type="hidden" name="logo" id="logo_input" value="{$data['logo']}">
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">品牌商名称</label>
+          <div class="layui-input-inline">
+            <input type="text" name="name" value="{$data.name}" required  lay-verify="required" placeholder="请输入品牌商名称" autocomplete="off" class="layui-input">
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">品牌商店招</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="recruitment">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="recruitment_img" src="{$data['recruitment']}">
+            <input type="hidden" name="recruitment" id="recruitment_input" value="{$data['recruitment']}">
+          </div>
+        </div>
+
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label"></label>
+          <div class="layui-input-block">
+
+            <div class="layui-upload">
+              <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>轮播海报-多图</legend>
+              </fieldset>
+
+              <button type="button" class="layui-btn" id="poster">选择上传文件(可多选)</button>
+
+              <div class="layui-inline layui-word-aux" id="layui-word-aux-poster"></div>
+
+              <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                预览图
+                <div class="layui-upload-list" id="poster_images">
+                  {volist name="data.poster_image" id="val"}
+                  <span class="multiple">
+                    <i class="layui-icon layui-icon-close-fill" onclick="deleteposter(this,'{$val}')"></i>
+                    <img src="{$val}" class="layui-upload-img">
+                  </span>
+                  {/volist}
+                </div>
+                <input type="hidden" id="poster_input" name="poster_image" value="{$data.poster_image_data}">
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">系列分类</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="classification">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="classification_img" src="{$data['classification']}">
+            <input type="hidden" name="classification" id="classification_input" value="{$data['classification']}">
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">系列分类</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="about">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="about_img" src="{$data['about']}">
+            <input type="hidden" name="about" id="about_input" value="{$data['about']}">
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label"></label>
+          <div class="layui-input-block">
+
+            <div class="layui-upload">
+              <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>系列展示-多图</legend>
+              </fieldset>
+
+              <button type="button" class="layui-btn" id="series">选择上传文件(可多选)</button>
+
+              <div class="layui-inline layui-word-aux" id="layui-word-aux-series"></div>
+
+              <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                预览图
+                <div class="layui-upload-list" id="series_images">
+                  {volist name="data.slider_image" id="val"}
+                  <span class="multiple">
+                    <i class="layui-icon layui-icon-close-fill" onclick="deleteseries(this,'{$val}')"></i>
+                    <img src="{$val}" class="layui-upload-img">
+                  </span>
+                  {/volist}
+                </div>
+                <input type="hidden" id="series_input" name="slider_image" value="{$data.slider_image_data}">
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">营销网点</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="dot">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="dot_img" src="{$data['dot']}">
+            <input type="hidden" name="dot" id="dot_input" value="{$data['dot']}">
+          </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">关于我们</label>
+          <div class="layui-input-inline">
+            <div class="layui-upload-drag" id="contact">
+              <i class="layui-icon"></i>
+              <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+          </div>
+          <div class="layui-form-mid layui-word-aux">
+            <img id="contact_img" src="{$data['contact']}">
+            <input type="hidden" name="contact" id="contact_input" value="{$data['contact']}">
+          </div>
+        </div>
+
+        <div class="layui-form-item">
+          <label class="layui-form-label">阅读并同意</label>
+          <div class="layui-input-block">
+            <input type="checkbox" name="is_consent" title="同意" {eq name="data.is_consent" value="1"}checked{/eq}>
+          </div>
+          <div class="layui-form-mid layui-word-aux">发布信息协议</div>
+        </div>
+
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="{__HOME_PATH}/layui/layui/layui.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script>
+
+  layui.use(['form','layedit','upload'], function(){
+    var $ = layui.$;
+    var form = layui.form;
+    var layedit = layui.layedit;
+    var upload = layui.upload;
+
+    //TODO 富文本编辑图片上传
+    layedit.set({
+      uploadImage: {
+        url: '/home/auth_api/upload' //接口url
+        ,type: '' //默认post
+      }
+    });
+
+    //TODO 建立编辑器-任务要求
+    var index = layedit.build('demo');
+
+    form.verify({
+      description: function() {
+        return layedit.sync(index);
+      }
+    });
+
+    //TODO logo上传
+    var uploadInst = upload.render({
+      elem: '#logo' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#logo_img").attr("src",res.data.src);
+        $("#logo_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 店招上传
+    var uploadInst = upload.render({
+      elem: '#recruitment' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#recruitment_img").attr("src",res.data.src);
+        $("#recruitment_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 系列分类上传
+    var uploadInst = upload.render({
+      elem: '#classification' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#classification_img").attr("src",res.data.src);
+        $("#classification_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 企业简介上传
+    var uploadInst = upload.render({
+      elem: '#about' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#about_img").attr("src",res.data.src);
+        $("#about_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 营销网点上传
+    var uploadInst = upload.render({
+      elem: '#dot' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#dot_img").attr("src",res.data.src);
+        $("#dot_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 关于我们上传
+    var uploadInst = upload.render({
+      elem: '#contact' //绑定元素
+      ,url: '/home/auth_api/upload' //上传接口
+      ,done: function(res){
+        //上传完毕回调
+        console.log(res)
+        $("#contact_img").attr("src",res.data.src);
+        $("#contact_input").val(res.data.src);
+      },error: function(){
+        //请求异常回调
+      }
+    });
+
+    //TODO 轮播海报
+    var uploadInst = upload.render({
+      elem : '#poster',
+      accept : 'file',//指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
+      multiple : 'true',
+      url : '/home/auth_api/upload',
+      before: function(obj){
+        //预读本地文件示例，不支持ie8
+        obj.preview(function(index, file, result){
+          if((file.type).indexOf("image") >= 0 ){
+            console.log(result);
+            console.log(file.name);
+          } else {
+            $('#poster_images').append(file.name)
+          }
+        });
+      },done: function(res){
+        console.log(res.data)
+        //获取#images_input内容
+        var value = $('#poster_input').val();
+        //重新赋值#images_input
+        $('#poster_input').val(value +','+ res.data.src);
+
+        //添加元素到#images
+        $('#poster_images').append('' +
+                '<span class="multiple"><i class="layui-icon layui-icon-close-fill" onclick="deleteposter(this,"'+ res.data.src +'")"></i>' +
+                '<img src="'+ res.data.src +'" alt="'+ res.data.title +'" class="layui-upload-img" style="max-width:100%">' +
+                '</span>')
+
+        layer.msg(res.msg,{time:'5000',tipsMore: true,zIndex:'2'});
+      },allDone: function(obj){ //当文件全部被提交后，才触发
+        $('#layui-word-aux-poster').append("执行完毕，文件总数："+obj.total+"成功："+obj.successful+"个，失败："+obj.aborted+"个");
+        console.log(obj.total); //得到总文件数
+        console.log(obj.successful); //请求成功的文件数
+        console.log(obj.aborted); //请求失败的文件数
+      },error : function(){
+        //请求异常
+      }
+    });
+
+    //TODO 系列展示
+    var uploadInst = upload.render({
+      elem : '#series',
+      accept : 'file',//指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
+      multiple : 'true',
+      url : '/home/auth_api/upload',
+      before: function(obj){
+        //预读本地文件示例，不支持ie8
+        obj.preview(function(index, file, result){
+          if((file.type).indexOf("image") >= 0 ){
+            console.log(result);
+            console.log(file.name);
+          } else {
+            $('#series_images').append(file.name)
+          }
+        });
+      },done: function(res){
+        console.log(res.data)
+        //获取#images_input内容
+        var value = $('#series_input').val();
+        //重新赋值#images_input
+        $('#series_input').val(value +','+ res.data.src);
+
+        //添加元素到#images
+        $('#series_images').append('' +
+                '<span class="multiple"><i class="layui-icon layui-icon-close-fill" onclick="deleteseries(this,"'+ res.data.src +'")"></i>' +
+                '<img src="'+ res.data.src +'" alt="'+ res.data.title +'" class="layui-upload-img" style="max-width:100%">' +
+                '</span>')
+
+        layer.msg(res.msg,{time:'5000',tipsMore: true,zIndex:'2'});
+      },allDone: function(obj){ //当文件全部被提交后，才触发
+        $('#layui-word-aux-series').append("执行完毕，文件总数："+obj.total+"成功："+obj.successful+"个，失败："+obj.aborted+"个");
+        console.log(obj.total); //得到总文件数
+        console.log(obj.successful); //请求成功的文件数
+        console.log(obj.aborted); //请求失败的文件数
+      },error : function(){
+        //请求异常
+      }
+    });
+
+    //TODO 监听提交
+    form.on('submit(formDemo)', function(data){
+      $.ajax({
+        url:'/home/brand/save',
+        method:'post',
+        data:data.field,
+        dataType:'JSON',
+        success:function(res){
+          if(res.code == 200){
+            layer.msg(res.msg,{time: 1000,end: function () {
+                location.href = "/home/brand/admin"
+              }})
+          } else {
+            layer.msg(res.msg);
+            return false;
+          }
+        },error:function (data) {
+          layer.msg(data);
+          return false;
+        }
+      });
+      return false;
+    });
+
+  });
+
+
+  /**
+   * 删除轮播海报
+   * @param e
+   * @param v
+   */
+  function deleteposter(e,v){
+    var value =  document.getElementById("poster_input").value;
+    //字符串截取为数组
+    var strArr = value.split(",");
+
+    var data = [];
+    for(i = 0,len = strArr.length; i < len; i++) {
+      if(strArr[i] != v) data[i] = strArr[i];
+    };
+
+    var join = data.join(",");
+    document.getElementById('poster_input').value = join;
+    e.parentNode.parentNode.removeChild(e.parentNode);
+  }
+
+  /**
+   * 删除系列展示
+   * @param e
+   * @param v
+   */
+  function deleteseries(e,v){
+    var value =  document.getElementById("series_input").value;
+    //字符串截取为数组
+    var strArr = value.split(",");
+
+    var data = [];
+    for(i = 0,len = strArr.length; i < len; i++) {
+      if(strArr[i] != v) data[i] = strArr[i];
+    };
+
+    var join = data.join(",");
+    document.getElementById('series_input').value = join;
+    e.parentNode.parentNode.removeChild(e.parentNode);
+  }
+
+</script>
+
+{/block}
