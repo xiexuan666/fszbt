@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:51:"D:\zbt/application/home/view/layui/index\index.html";i:1588213474;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:51:"D:\zbt/application/home/view/layui/index\index.html";i:1588645722;}*/ ?>
 ﻿<!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -51,7 +51,7 @@
 
     <div class="welcome">
         <p><u>Loading . . .</u></p>
-     
+
     </div>
 
     <section class="video">
@@ -84,6 +84,12 @@
                         <div class="top"><span>先入为主，布局未来</span><i></i></div>
                         <div class="bottom">全面布局<u>找家具</u>找人才<u>找服务</u>找采购<br />抢占头等商机<br />基于<u>家居</u>360°全方位服务</div>
                     </div>
+                </div>
+                <div class="swiper-slide nth5">
+                    <!-- <div class="box">
+                        <div class="top"><span>先入为主，布局未来</span><i></i></div>
+                        <div class="bottom">全面布局<u>找家具</u>找人才<u>找服务</u>找采购<br />抢占头等商机<br />基于<u>家居</u>360°全方位服务</div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -127,8 +133,8 @@
         </div>
     </section>
 
-    <section class="clients">
-        <div class="box">
+    <!-- <section class="clients"> -->
+    <!-- <div class="box">
             <div class="caption">
                 <i></i><span>他们与招宝通长期合作</span>
                 <br class="clear" />
@@ -150,10 +156,9 @@
                 <li class="huadan"><span>华丹乳业官方</span></li>
                 <li class="zd"><span>中东集团</span></li>
             </ul>
-        </div>
-    </section>
-
-    <section class="quality">
+        </div> -->
+    <!-- </section> -->
+    <section style="display: none;" class="quality">
         <div class="box">
             <div class="caption">
                 <i></i><span>不同媒介，同样精彩</span>
@@ -191,6 +196,8 @@
         </div>
     </section>
 
+
+
     <section class="aboutus">
         <ul class="menu">
             <li>思想</li>
@@ -206,8 +213,8 @@
                 </div>
                 <div class="swiper-slide nth2">
                     <strong>招宝通</strong>
-                    <p>从2019年到至今，坐落于广东·佛山顺德，是一家专为本土企业打造信息交互综合服务平台。</p>
-                    <p>我们始终坚持以客户需求为导向，为追求用户体验设计，提供有针对性的项目解决方案，招宝通将不断地超越自我，挑战险峰！</p>
+                    <p>从2019年到至今，坐落于广东·佛山顺德，是一家专为本土企业打造信息交互综合服务平台。
+                        <p>我们始终坚持以客户需求为导向，为追求用户体验设计，提供有针对性的项目解决方案，招宝通将不断地超越自我，挑战险峰！</p>
                 </div>
                 <div class="swiper-slide nth3">
                     <strong>只有你们想不到的，没有我们做不到的</strong>
@@ -235,20 +242,32 @@
     <section class="contact">
         <div class="box">
             <div class="above">
-                <!--<div class="wechat"><img src="<?php echo $siteData['routine_logo']; ?>" alt="扫描关注招宝通微信小程序" /></div>-->
+
+
+                <img src="/application/home/view/layui/templates/static/images/QRcode.png" alt="扫描关注招宝通微信小程序" />
+                <img src="/application/home/view/layui/templates/static/images/GZH.png" alt="扫描关注招宝通微信公众号" />
+
+                <div class="photograph">
+                    <p>客服电话<br />0757-23387517<br />工作时间：周一至周六 早上8:30-下午5:30</p>
+                </div>
+
+
                 <div class="left">
                     <a href="tel:13760929390" title="信息服务咨询热线" class="tel"></a>
-                    <p>中国<u>·</u>广东<u></u>顺德<br />联系电话：13760929390<br />地址：佛山市顺德区龙江镇仙塘村委会沙龙路11号友邦中心二楼A室
+                    <p> Email：wshbin512@163.com<br/>域名：https://www.zbtmini.com<br/><?php echo $siteData['site_name']; ?>版权所有<br />
+                    </p>
+                    <p>广东<u></u>顺德 <u>联系电话：13760929390</u><br />地址：佛山市顺德区龙江镇仙塘村委会沙龙路11号友邦中心二楼A室
                         <br />邮编：528303<a href="" target="_blank" class="job">[ 工作机会 ]</a></p>
+
                 </div>
-                <div class="right">
-                    Email：wshbin512@163.com<br />域名：https://www.zbtmini.com<br /><?php echo $siteData['site_name']; ?>版权所有<br /><br />
-                </div>
+                <!-- <div class="right">
+
+                </div> -->
             </div>
         </div>
     </section>
 
-    <section class="business">
+    <section style="display: none;" class="business">
         <div class="box">
             <div class="caption">
                 <i></i><span>我们能做什么</span>
@@ -279,7 +298,7 @@
         </div>
     </section>
 
-    <section class="marketing">
+    <section style="display: none;" class="marketing">
         <div class="box">
             <div class="caption">
                 <i></i><span>整合营销，抢占商机</span>
